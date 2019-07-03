@@ -1,0 +1,25 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 14px;
+    font-weight: bold;
+    color: $white;
+    height: 34px;
+    min-width: 70px;
+    page-break-after: 5px 10px;
+    line-height: 1;
+
+    &_base {
+        background-color: $btn-base-bg;
+    }
+
+    &_warn {
+        background-color: $btn-warn-bg;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $btn-warn-bg;
+        }
+}
