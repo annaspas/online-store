@@ -117,12 +117,12 @@ body {
     
     .search-container button {
         background-image: url("Layer 186.png");
-  position: absolute;
-  left: 1255px;
-  top: 471px;
-  width: 20px;
-  height: 20px;
-  z-index: 486;
+        position: absolute;
+        left: 1255px;
+        top: 471px;
+        width: 20px;
+        height: 20px;
+        z-index: 486;
     }
 
     .search-container .fa fa-search {
@@ -142,6 +142,9 @@ body {
 .section_services {
     .services {
         background-color: #263238;
+        position: relative;
+        padding-top: 135px;
+        padding-bottom: 135px;
     }
 
     .services h2 {
@@ -155,18 +158,38 @@ body {
         top: 3062.197px;
     }
 
-    .tabs_list-item {
+    .services .tabs_list {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
+        
     }
-    .tabs_link.tab-active {
+
+    .services .tabs_list-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 20%;
+        padding: 0 5px;
+    }
+
+    .services .tabs_list-item img {
+        border-radius: 50%;
+        left: 506px;
+        top: 3142px;
+        width: 113px;
+        height: 113px;
+    }
+    .services .tabs_link.tab-active {
         opacity: 1;
     }
 
-    .tabs_content-item:not(.tab-active) {
+    .services .tabs_content-item:not(.tab-active) {
         display: none;
     }
 
-    q {
+     q {
         font-size: 24px;
         font-family: "Roboto";
         color: rgb(255, 255, 255);
@@ -188,6 +211,15 @@ body {
         height: 62px;
     }
 
+    .row {
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    [class^="col"] {
+        padding: 0 15px;
+    }
 }
 
 
