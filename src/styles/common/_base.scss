@@ -35,3 +35,109 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+// section hero
+
+.section_hero {
+    .hero {
+        margin-top: 0px;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+        display: flex;
+        align-items: center;
+    }
+
+    #bg {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        background-size: cover;
+    }
+
+    .hero_content h1 {
+        font-size: 48px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 0.625;
+        text-align: left;
+        position: absolute;
+        left: 600.172px;
+        top: 310.5px;
+        z-index: 491;
+    }
+
+    .hero_text {
+        font-size: 20px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        text-align: left;
+        position: absolute;
+        left: 672.437px;
+        top: 401.891px;
+        z-index: 490;
+    }
+
+    .search-container {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 1920px;
+        height: 5485px;
+        z-index: 488;
+    }
+
+    .search-container .input {
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 625px;
+        top: 452px;
+        width: 670px;
+        height: 56px;
+        z-index: 485;
+    }
+
+    .search-container .placeholder {
+        font-size: 14px;
+        font-family: "Roboto";
+        color: rgb(144, 164, 174);
+        line-height: 2.143;
+        text-align: left;
+        position: absolute;
+        left: 649.734px;
+        top: 495.022px;
+        z-index: 487;
+    }
+    
+    .search-container button {
+        background-image: url("Layer 186.png");
+  position: absolute;
+  left: 1255px;
+  top: 471px;
+  width: 20px;
+  height: 20px;
+  z-index: 486;
+    }
+
+    .search-container .fa fa-search {
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 625px;
+        top: 452px;
+        width: 670px;
+        height: 56px;
+        z-index: 485;
+    }
+}
+
+  
+
+
+
