@@ -137,6 +137,60 @@ body {
     }
 }
 
+// section_services styles
+
+.section_services {
+    .services {
+        background-color: #263238;
+    }
+
+    .services h2 {
+        font-size: 36px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.667;
+        text-align: left;
+        left: 691.625px;
+        top: 3062.197px;
+    }
+
+    .tabs_list-item {
+        align-items: center;
+    }
+    .tabs_link.tab-active {
+        opacity: 1;
+    }
+
+    .tabs_content-item:not(.tab-active) {
+        display: none;
+    }
+
+    q {
+        font-size: 24px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        line-height: 2.5;
+        text-align: left;
+        left: 473.266px;
+        top: 3327.469px;
+    }
+
+    cite {
+        font-size: 15px;
+        font-family: "Roboto";
+        color: rgb(176, 190, 197);
+        line-height: 1.6;
+        text-align: center;
+        left: 800.456px;
+        top: 3360.168px;
+        width: 318px;
+        height: 62px;
+    }
+
+}
+
+
   
 
 
