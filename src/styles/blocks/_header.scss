@@ -1,27 +1,26 @@
 .header {
-    
-    & top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 25px 0;
+
+  & top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+
+  & dropdown {
+    &-main {
+      transition: opacity .3s eas, visibility .3 ease;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      right: 0;
     }
-
-     & dropdown {
-         &-main {
-            transition: opacity .3s eas, visibility .3 ease;
-            opacity: 0;
-            visibility: hidden;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            }
-     }
+  }
 
 
-
-// header topnav
-.topnav {
+  // header topnav
+  .topnav {
     background-color: #263238;
     overflow: hidden;
     font-size: 14px;
@@ -51,7 +50,9 @@
   }
 
   @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {
+      display: none;
+    }
     .topnav a.icon {
       float: right;
       display: block;
@@ -59,7 +60,9 @@
   }
 
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+      position: relative;
+    }
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -71,4 +74,4 @@
       text-align: left;
     }
   }
-    }
+}
