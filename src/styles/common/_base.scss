@@ -228,14 +228,6 @@ body {
     }
   }
 
-  //.tabs_link.tab-active {
-  //    opacity: 1;
-  //}
-  //
-  //.tabs_content-item:not(.tab-active) {
-  //    display: none;
-  //}
-
   .row {
     margin: 0 -15px;
     display: flex;
@@ -250,7 +242,7 @@ body {
 //  benefits styles
 
 .section_benefits {
-  background-color: $gray;
+  background-color: #f4f6f5;
   width: 100%;
   margin: 0 auto;
   padding: 20px 0px;
