@@ -25,8 +25,8 @@ body {
 
 .container {
   width: 100%;
-  //max-width: 1200px;
-  //padding: 0 15px;
+//   max-width: 1200px;
+//   padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -39,6 +39,10 @@ body {
 // section hero
 
 .section_hero {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+
   .hero {
     margin-top: 0px;
     height: 100vh;
@@ -139,6 +143,10 @@ body {
 
 // section_services styles
 .section_services {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0px;
+
   .services {
     background-color: #263238;
     position: relative;
@@ -220,6 +228,53 @@ body {
       padding: 0 15px;
     }
   }
+}
+
+.section_benefits {
+    background-color: $gray;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0px;
+    height: 708px;
+
+    .banner {
+        margin: 130px 410px;
+        background-color: #b5b5b5;
+        height: 440px;
+        width: 1102px;
+        position: absolute;
+        display: flex;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    }
+
+    .rectangle {
+        height: 218px;
+        width: 649px;
+        background-color: $green;
+        position: relative;
+        display: flex;
+        margin: 115px 220px;
+
+        h3 {
+            font-style: 30px;
+            font-family: $base-f-family;
+            color: $white;
+            line-height: .2;
+            text-align: left;
+            margin: 70px 60px;
+        }
+
+        .btn_benefits {
+            width: 207px;
+            height: 47px;
+            background-color: $white;
+            font-size: 18px;
+            font-family: $base-f-family;
+            line-height: 2;
+            text-align: center;
+            margin: 69px 67px;
+          }
+    }
 }
 
 
