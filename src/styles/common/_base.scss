@@ -1,348 +1,351 @@
 body {
-    font: $base-f-size $base-f-family;
+  font: $base-f-size $base-f-family;
 }
 
 .wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-    &_fix {
-        display: flex;
-    }
+  &_fix {
+    display: flex;
+  }
 }
 
 .header,
 .footer {
-    width: 100%;
-    flex-shrink: 1;
+  width: 100%;
+  flex-shrink: 1;
 }
 
 .main {
-    width: 100%;
-    flex-grow: 1;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .container {
-    width: 100%;
-    //   max-width: 1200px;
-    //   padding: 0 15px;
-    margin: 0 auto;
+  width: 100%;
+  //   max-width: 1200px;
+  //   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .row {
-    margin: 0 -15px;
-    display: flex;
-    flex-wrap: wrap;
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 // section hero
 
 .section_hero {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 
-    .hero {
-        margin-top: 0px;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-position: 50% bottom;
-        display: flex;
-        align-items: center;
-        position: relative;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        background-size: cover;
-        filter: grayscale(90%);
+  .hero {
+    margin-top: 0px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    filter: grayscale(90%);
 
-        h1 {
-            font-size: 48px;
-            font-family: $base-f-family;
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            line-height: 0.625;
-            text-align: left;
-            position: absolute;
-            left: 600.172px;
-            top: 310.5px;
-            z-index: 491;
-        }
-
-        .hero_text {
-            font-size: 20px;
-            font-family: $base-f-family;
-            color: rgb(255, 255, 255);
-            line-height: 1.5;
-            text-align: left;
-            position: absolute;
-            left: 672.437px;
-            top: 401.891px;
-            z-index: 490;
-        }
-
-        .search-container {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            //width: 1920px;
-            //height: 5485px;
-            z-index: 488;
-
-            .input {
-                border-radius: 4px;
-                background-color: rgb(255, 255, 255);
-                position: absolute;
-                left: 625px;
-                top: 452px;
-                width: 670px;
-                height: 56px;
-                z-index: 485;
-            }
-
-            .placeholder {
-                font-size: 14px;
-                font-family: $base-f-family;
-                color: rgb(144, 164, 174);
-                line-height: 2.143;
-                text-align: left;
-                position: absolute;
-                left: 649.734px;
-                top: 495.022px;
-                z-index: 487;
-            }
-
-            button {
-                background-image: url('Layer 186.png');
-                position: absolute;
-                left: 1255px;
-                top: 471px;
-                width: 20px;
-                height: 20px;
-                z-index: 486;
-            }
-
-            .fa {
-                .fa-search {
-                    border-radius: 4px;
-                    background-color: rgb(255, 255, 255);
-                    position: absolute;
-                    left: 625px;
-                    top: 452px;
-                    width: 670px;
-                    height: 56px;
-                    z-index: 485;
-                }
-            }
-        }
+    h1 {
+      font-size: 48px;
+      font-family: $base-f-family;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 0.625;
+      text-align: left;
+      position: absolute;
+      left: 600.172px;
+      top: 310.5px;
+      z-index: 491;
     }
+
+    .hero_text {
+      font-size: 20px;
+      font-family: $base-f-family;
+      color: rgb(255, 255, 255);
+      line-height: 1.5;
+      text-align: left;
+      position: absolute;
+      left: 672.437px;
+      top: 401.891px;
+      z-index: 490;
+    }
+
+    .search-container {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      //width: 1920px;
+      //height: 5485px;
+      z-index: 488;
+
+      .input {
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 625px;
+        top: 452px;
+        width: 670px;
+        height: 56px;
+        z-index: 485;
+      }
+
+      .placeholder {
+        font-size: 14px;
+        font-family: $base-f-family;
+        color: rgb(144, 164, 174);
+        line-height: 2.143;
+        text-align: left;
+        position: absolute;
+        left: 649.734px;
+        top: 495.022px;
+        z-index: 487;
+      }
+
+      button {
+        background-image: url('Layer 186.png');
+        position: absolute;
+        left: 1255px;
+        top: 471px;
+        width: 20px;
+        height: 20px;
+        z-index: 486;
+      }
+
+      .fa {
+        .fa-search {
+          border-radius: 4px;
+          background-color: rgb(255, 255, 255);
+          position: absolute;
+          left: 625px;
+          top: 452px;
+          width: 670px;
+          height: 56px;
+          z-index: 485;
+        }
+      }
+    }
+  }
 }
 
 // section_services styles
 
 .section_services {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
 
-    .services {
-        background-color: $var-black;
-        position: relative;
-        padding-top: 135px;
-        padding-bottom: 135px;
-        height: 618px;
+  .services {
+    background-color: $var-black;
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    height: 618px;
 
-        h2 {
-            font-size: 36px;
-            font-family: $base-f-family;
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        .tabs_list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        li {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 20%;
-            height: 32%px;
-            padding: 5px;
-            margin: 15px;
-            margin-left: 60px;
-            cursor: pointer;
-        }
-
-            img {
-                border-radius: 50%;
-                left: 506px;
-                top: 3142px;
-                width: 113px;
-                height: 113px;
-            }
-
-            img:hover {
-                opacity:lighten -50%;
-                cursor: pointer;
-            }
-            blockquote {
-                text-align: center;
-
-                q {
-                    font-size: 24px;
-                    font-family: $base-f-family;
-                    color: rgb(255, 255, 255);
-                    line-height: 2.5;
-                    left: 473.266px;
-                    top: 3327.469px;
-                    display: block;
-                }
-
-                q:hover {
-                    color: $green;
-                    background-color: transparent;
-                }
-
-                cite {
-                    font-size: 15px;
-                    font-family: $base-f-family;
-                    color: rgb(176, 190, 197);
-                    line-height: 1.6;
-                    text-align: center;
-                    left: 800.456px;
-                    top: 3360.168px;
-                    width: 318px;
-                    height: 62px;
-                    display: block;
-                }
-            }
-        }
-
-        //.tabs_link.tab-active {
-        //    opacity: 1;
-        //}
-        //
-        //.tabs_content-item:not(.tab-active) {
-        //    display: none;
-        //}
-
-        .row {
-            margin: 0 -15px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        [class^='col'] {
-            padding: 0 15px;
-        }
+    h2 {
+      font-size: 36px;
+      font-family: $base-f-family;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 1.6;
+      text-align: center;
     }
-//  benefits styles 
+
+    .tabs_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 20%;
+      height: 32% px;
+      padding: 5px;
+      margin: 15px;
+      margin-left: 60px;
+      cursor: pointer;
+    }
+
+    img {
+      border-radius: 50%;
+      left: 506px;
+      top: 3142px;
+      width: 113px;
+      height: 113px;
+    }
+
+    img:hover {
+      opacity: lighten -50%;
+      cursor: pointer;
+    }
+
+    blockquote {
+      text-align: center;
+
+      q {
+        font-size: 24px;
+        font-family: $base-f-family;
+        color: rgb(255, 255, 255);
+        line-height: 2.5;
+        left: 473.266px;
+        top: 3327.469px;
+        display: block;
+      }
+
+      q:hover {
+        color: $green;
+        background-color: transparent;
+      }
+
+      cite {
+        font-size: 15px;
+        font-family: $base-f-family;
+        color: rgb(176, 190, 197);
+        line-height: 1.6;
+        text-align: center;
+        left: 800.456px;
+        top: 3360.168px;
+        width: 318px;
+        height: 62px;
+        display: block;
+      }
+    }
+  }
+
+  //.tabs_link.tab-active {
+  //    opacity: 1;
+  //}
+  //
+  //.tabs_content-item:not(.tab-active) {
+  //    display: none;
+  //}
+
+  .row {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class^='col'] {
+    padding: 0 15px;
+  }
+}
+
+//  benefits styles
 
 .section_benefits {
-    background-color: $gray;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0px;
-    height: 708px;
+  background-color: $gray;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  height: 708px;
 
-    .banner {
-        margin: 130px 410px;
-        background-color: #b5b5b5;
-        height: 440px;
-        width: 1102px;
-        position: absolute;
-        display: flex;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  .banner {
+    margin: 130px 410px;
+    background-color: #b5b5b5;
+    height: 440px;
+    width: 1102px;
+    position: absolute;
+    display: flex;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .rectangle {
+    height: 218px;
+    width: 649px;
+    background-color: $green;
+    position: relative;
+    display: flex;
+    margin: 115px 220px;
+
+    h3 {
+      font-style: 30px;
+      font-family: $base-f-family;
+      color: $white;
+      line-height: 0.2;
+      text-align: left;
+      margin: 70px 60px;
     }
 
-    .rectangle {
-        height: 218px;
-        width: 649px;
-        background-color: $green;
-        position: relative;
-        display: flex;
-        margin: 115px 220px;
-
-        h3 {
-            font-style: 30px;
-            font-family: $base-f-family;
-            color: $white;
-            line-height: 0.2;
-            text-align: left;
-            margin: 70px 60px;
-        }
-
-        .btn_benefits {
-            width: 207px;
-            height: 47px;
-            background-color: $white;
-            font-size: 18px;
-            font-family: $base-f-family;
-            line-height: 2;
-            text-align: center;
-            margin: 69px 67px;
-        }
+    .btn_benefits {
+      width: 207px;
+      height: 47px;
+      background-color: $white;
+      font-size: 18px;
+      font-family: $base-f-family;
+      line-height: 2;
+      text-align: center;
+      margin: 69px 67px;
     }
+  }
 }
 
 // tutorials styles
 
 .section_tutorials {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0px;
-    height: 708px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  height: 708px;
 
-    p {
-        font-style: 36px;
-        font-family: $base-f-family;
-        color: $var-black;
-        font-weight: bold;
-        line-height: 1.667;
-        text-align: center;
-        left: 691.625px;
-        top: 3062.197px;
-    }
+  p {
+    font-style: 36px;
+    font-family: $base-f-family;
+    color: $var-black;
+    font-weight: bold;
+    line-height: 1.667;
+    text-align: center;
+    left: 691.625px;
+    top: 3062.197px;
+  }
 
-    .tabs_list {
-        display: flex;
-        margin-bottom: 20px;
-        margin: 40px 55px;
-        justify-content: center;
+  .tabs_list {
+    display: flex;
+    margin-bottom: 20px;
+    margin: 40px 55px;
+    justify-content: center;
 
-        li {
-            display: flex;
-            flex-wrap: wrap;
-            width: 20%;
-            margin: 50px;
-            position: relative;
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      width: 20%;
+      margin: 50px;
+      position: relative;
 
-            img {
-                width: 360px;
-                height: 270px;
-            }
-            blockquote {
-                cite {
-                    p {
-                        font-size: 24px;
-                        font-family: $base-f-family;
-                        color: $var-black;
-                        font-weight: bold;
-                        line-height: 2.5;
-                        text-align: left;
-                    }
-                }
-            }
+      img {
+        width: 360px;
+        height: 270px;
+      }
+
+      blockquote {
+        cite {
+          p {
+            font-size: 24px;
+            font-family: $base-f-family;
+            color: $var-black;
+            font-weight: bold;
+            line-height: 2.5;
+            text-align: left;
+          }
         }
+      }
     }
+  }
 }
