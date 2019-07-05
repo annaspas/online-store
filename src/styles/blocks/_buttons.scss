@@ -26,6 +26,11 @@
 
   &--radius {
     border-radius: $btn-radius;
-    position: relative;
+    position: absolute;
+    left: 1472px;
+    top: 30px;
+    width: 72px;
+    height: 32px;
+    z-index: 510;
   }
 }

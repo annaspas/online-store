@@ -19,9 +19,6 @@
     }
   }
 
-
-  // header topnav
-
   .topnav {
     background-color: $var-black;
     overflow: hidden;
@@ -74,6 +71,25 @@
       float: none;
       display: block;
       text-align: left;
+    }
+  }
+
+  .header_tools {
+
+    .header_call-link {
+      font-size: 15px;
+      font-family: $base-f-family;
+      color: $gray;
+      line-height: 1.6;
+      text-align: left;
+      position: absolute;
+      left: 995.531px;
+      top: 56.668px;
+      z-index: 518;
+
+      .header_call-link span {
+        color: $red;
+      }
     }
   }
 }
