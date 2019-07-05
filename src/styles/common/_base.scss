@@ -180,6 +180,7 @@ body {
             padding: 5px;
             margin: 15px;
             margin-left: 60px;
+            cursor: pointer;
         }
 
             img {
@@ -189,8 +190,14 @@ body {
                 width: 113px;
                 height: 113px;
             }
+
+            img:hover {
+                opacity:lighten -50%;
+                cursor: pointer;
+            }
             blockquote {
                 text-align: center;
+
                 q {
                     font-size: 24px;
                     font-family: $base-f-family;
@@ -199,6 +206,11 @@ body {
                     left: 473.266px;
                     top: 3327.469px;
                     display: block;
+                }
+
+                q:hover {
+                    color: $green;
+                    background-color: transparent;
                 }
 
                 cite {
@@ -234,7 +246,7 @@ body {
             padding: 0 15px;
         }
     }
-}
+//  benefits styles 
 
 .section_benefits {
     background-color: $gray;
@@ -282,6 +294,8 @@ body {
         }
     }
 }
+
+// tutorials styles
 
 .section_tutorials {
     width: 100%;

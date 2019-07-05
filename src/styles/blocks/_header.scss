@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px 0;
+    position: absolute;
   }
 
   & dropdown {
@@ -21,10 +22,10 @@
 
   // header topnav
   .topnav {
-    background-color: #263238;
+    background-color: $var-black;
     overflow: hidden;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: $base-f-family;
   }
 
   .topnav a {
