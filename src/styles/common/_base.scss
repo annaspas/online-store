@@ -41,7 +41,7 @@ body {
 .section_hero {
     width: 100%;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 0;
 
   .hero {
     margin-top: 0px;
@@ -142,16 +142,18 @@ body {
 }
 
 // section_services styles
+
 .section_services {
     width: 100%;
     margin: 0 auto;
-    padding: 5px 0px;
+    padding: 20px 0px;
 
   .services {
-    background-color: #263238;
+    background-color: $var-black;
     position: relative;
     padding-top: 135px;
     padding-bottom: 135px;
+    height: 618px;
 
     h2 {
       font-size: 36px;
@@ -234,7 +236,7 @@ body {
     background-color: $gray;
     width: 100%;
     margin: 0 auto;
-    padding: 5px 0px;
+    padding: 20px 0px;
     height: 708px;
 
     .banner {
@@ -274,6 +276,56 @@ body {
             text-align: center;
             margin: 69px 67px;
           }
+    }
+}
+
+.section_tutorials {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    height: 708px;
+
+    p {
+        font-style: 36px;
+        font-family: $base-f-family;
+        color: $var-black;
+        font-weight: bold;
+        line-height: 1.667;
+        text-align: center;
+        left: 691.625px;
+        top: 3062.197px;
+    }
+
+    .tabs_list {
+        display: flex;
+        margin-bottom: 20px;
+        margin: 40px 55px;
+        justify-content: center;
+
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            width: 20%;
+            margin: 50px;
+            position: relative;
+
+            img {
+              width: 360px;
+              height: 270px;
+            }
+            blockquote {
+                cite {
+                    p {
+                        font-size: 24px;
+                        font-family: $base-f-family;
+                        color: $var-black;
+                        font-weight: bold;
+                        line-height: 2.5;
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
 }
 
