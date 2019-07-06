@@ -1,6 +1,27 @@
 .product {
 
     &_card {
+        position: relative;
+        background-color: $white;
+
+        &-label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+
+
+            &:before {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 60px 60px 0 0;
+                border-color: $base-color transparent transparent transparent;
+            }
+        }
 
         &-star {
             color: #b5b5b5b5;
@@ -12,9 +33,30 @@
             }
         }
 
+        &-author {
+            display: flex;
+            align-items: center;
+        }
+
+        &-avatar {
+            margin-right: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        &-rate {
+            display: flex;
+        }
+
+        &-raiting {
+            display: flex;
+        }
+        
+
         &-main {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
 
