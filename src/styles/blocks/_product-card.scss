@@ -9,8 +9,17 @@
 
             &.active {
                 color: #ffa726;
-
             }
+        }
+
+        &-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-footer {
+            @extend .product_card-main;
         }
     }
 }
