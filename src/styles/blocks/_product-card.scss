@@ -1,0 +1,16 @@
+.product {
+
+    &_card {
+
+        &-star {
+            color: #b5b5b5b5;
+            font-size: 11px;
+
+
+            &.active {
+                color: #ffa726;
+
+            }
+        }
+    }
+}
