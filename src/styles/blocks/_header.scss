@@ -1,21 +1,21 @@
 .header {
 
-  & top {
+  &-top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding: 25px 0;
-    position: absolute;
   }
 
-  & dropdown {
+  &_dropdown {
     &-main {
       transition: opacity .3s eas, visibility .3 ease;
-      opacity: 0;
+      //opacity: 0;
       visibility: hidden;
       position: absolute;
-      top: 100%;
       right: 0;
+      z-index: 3;
+      background-color: #CCC;
     }
   }
 
@@ -33,7 +33,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
     font-size: 14px;
     font-family: "Roboto";
     margin-left: 30px;
@@ -75,6 +74,7 @@
   }
 
   .header_tools {
+    display: flex;
 
     .header_call-link {
       font-size: 15px;
@@ -82,10 +82,10 @@
       color: $gray;
       line-height: 1.6;
       text-align: left;
-      position: absolute;
-      left: 995.531px;
-      top: 56.668px;
-      z-index: 518;
+      //position: absolute;
+      //left: 995.531px;
+      //top: 56.668px;
+      //z-index: 518;
 
       span {
         color: $red;
