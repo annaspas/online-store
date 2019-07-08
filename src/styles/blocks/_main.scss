@@ -32,7 +32,7 @@
       z-index: 3;
       display: block;
       top: 160px;
-      left: 250px;
+      left: 320px;
     }
 
     .hero_text {
@@ -43,11 +43,12 @@
       text-align: left;
       position: absolute;
       top: 204px;
-      left: 335px;
+      left: 415px;
       z-index: 3;
     }
 
     .search-container {
+      display: flex;
       position: absolute;
       left: 0px;
       top: 0px;
@@ -57,7 +58,7 @@
         border-radius: 4px;
         background-color: rgb(255, 255, 255);
         position: absolute;
-        left: 294px;
+        left: 355px;
         top: 295px;
         width: 664px;
         height: 44px;
@@ -78,7 +79,7 @@
 
       button {
         position: absolute;
-        left: 900px;
+        left: 962px;
         top: 297px;
         width: 57px;
         height: 42px;
