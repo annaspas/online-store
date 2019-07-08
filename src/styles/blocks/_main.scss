@@ -301,40 +301,46 @@
   .container--big {
     margin: 0 auto;
     padding: 15px 0px;
+    background-color: #f4f6f5;
 
 
     .section_title {
+      text-align: center;
+
+
+      h2 {
       font-family: $base-f-family;
       font-size: 14px;
       font-weight: bold;
       line-height: 1.7;
-      text-align: center;
+      }
     }
 
-    .products_tabs-item {
-      background-color: $white;
-      display: inline-flex;
-      justify-content: space-around;
-      align-content: center;
+    .products_tabs {
       text-align: center;
-      flex-wrap: wrap;
-      margin-bottom: 5px;
-      box-shadow: 0 1px 5px 5px rgba(0,0,0,.2);
-      margin: 15px;
-      left: 50px;
 
-      a {
-        font-family: $base-f-family;
-        font-size: 14px;
-        color: #555c60;
-        padding: 6px 8px;
-        margin: 6px;
-        width: 85px;
-        height: 40px;
-      }
-
-      a:hover {
-        background-color: darken($red, 15%);
+      &-item {
+        background-color: $white;
+        display: inline-flex;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+  
+        a {
+          font-family: $base-f-family;
+          font-size: 14px;
+          color: #555c60;
+          padding: 6px 8px;
+          margin: 6px;
+          width: 85px;
+          height: 40px;
+        }
+  
+        a:hover {
+          background-color: darken($red, 15%);
+        }
       }
     }
   }
