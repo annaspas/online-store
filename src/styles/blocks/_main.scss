@@ -313,15 +313,17 @@
 
     .products_tabs-item {
       background-color: $white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline-flex;
+      justify-content: space-around;
+      align-content: center;
+      text-align: center;
+      flex-wrap: wrap;
       margin-bottom: 5px;
+      box-shadow: 0 1px 5px 5px rgba(0,0,0,.2);
+      margin: 15px;
+      left: 50px;
 
       a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-family: $base-f-family;
         font-size: 14px;
         color: #555c60;
