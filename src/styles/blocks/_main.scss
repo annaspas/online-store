@@ -32,7 +32,7 @@
       z-index: 3;
       display: block;
       top: 160px;
-      left: 350px;
+      left: 250px;
     }
 
     .hero_text {
@@ -43,7 +43,7 @@
       text-align: left;
       position: absolute;
       top: 204px;
-      left: 435px;
+      left: 335px;
       z-index: 3;
     }
 
@@ -57,7 +57,7 @@
         border-radius: 4px;
         background-color: rgb(255, 255, 255);
         position: absolute;
-        left: 394px;
+        left: 294px;
         top: 295px;
         width: 664px;
         height: 44px;
@@ -78,24 +78,12 @@
 
       button {
         position: absolute;
-        left: 1000px;
+        left: 900px;
         top: 297px;
         width: 57px;
         height: 42px;
         z-index: 3;
-      }
-
-      .fa {
-        .fa-search {
-          border-radius: 4px;
-          background-color: rgb(255, 255, 255);
-          position: absolute;
-          left: 625px;
-          top: 452px;
-          width: 670px;
-          height: 56px;
-          z-index: 485;
-        }
+        opacity: .4;
       }
     }
   }
