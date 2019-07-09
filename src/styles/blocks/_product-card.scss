@@ -60,6 +60,39 @@
       align-items: center;
     }
 
+    &-title {
+      font-size: 18px;
+      font-family: $base-f-family;
+      color: #263238;
+      line-height: 3;
+      text-align: left;
+    }
+
+    &-category {
+      font-size: 14px;
+      font-family: $base-f-family;
+      color: $green;
+      line-height: 4;
+      text-align: left;
+    }
+
+    &-price {
+      font-size: 20px;
+      font-family: $base-f-family;
+      color: #263238;
+      font-weight: bold;
+      line-height: 3;
+      text-align: left;
+    }
+
+    &-name {
+      font-size: 14px;
+      font-family: $base-f-family;
+      color: #647b85;
+      line-height: 4;
+      text-align: left;
+    }
+
     &-footer {
       @extend .product_card-main;
       margin-bottom: 15px;
