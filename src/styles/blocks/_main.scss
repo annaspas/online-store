@@ -378,3 +378,53 @@
     }
   }
 }
+
+// trending_products styles
+
+.trending_products {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  height: 700px;
+
+  .slider {
+    padding: 15px;
+    text-align: center;
+
+      .trending_tabs {
+        padding: 5px;
+        margin: 5px;
+
+        .row {
+          width: 100%;
+          display: inline-flex;
+        }
+      }
+
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto 0;
+      color: $green;
+  }
+  
+  .slick-dots li.slick-active button {
+      background-color: transparent;
+  }
+  
+  .slick-dots button {
+      transition: background-color .3s ease;
+      background-color: $green;
+      border-radius: 50%;
+      padding: 0;
+      outline: none;
+      width: 10px;
+      height: 10%;
+      margin: 0 3px;
+      font-style: 0;
+      text-indent: -999px;
+      overflow: hidden;
+    }
+  }
+}
