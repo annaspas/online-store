@@ -39,11 +39,14 @@ function toggleDropdown() {
 }
 
 
-$('.trending_tabs').slick({
+$('.trending_slides').slick({
     dots: true,
-    infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 3
+    slidesToScroll: 4,
+    centerMode: true,
+    prevArrow: '<button class="testimonials_arrows testimonials_prev"><i class="icon-angle-down"></i></button>',
+    nextArrow: '<button class="testimonials_arrows testimonials_next"><i class="icon-angle-down"></i></button>',
 });
+
 
           
