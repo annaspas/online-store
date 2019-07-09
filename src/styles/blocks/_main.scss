@@ -24,7 +24,7 @@
     h1 {
       font-size: 48px;
       font-family: $base-f-family;
-      color: rgb(255, 255, 255);
+      color: $white;
       font-weight: bold;
       line-height: 0.625;
       text-align: center;
@@ -38,7 +38,7 @@
     .hero_text {
       font-size: 20px;
       font-family: $base-f-family;
-      color: rgb(255, 255, 255);
+      color: $white;
       line-height: 1.5;
       text-align: left;
       position: absolute;
@@ -56,7 +56,7 @@
 
       .input {
         border-radius: 4px;
-        background-color: rgb(255, 255, 255);
+        background-color: $white;
         position: absolute;
         left: 355px;
         top: 295px;
@@ -107,7 +107,7 @@
     h2 {
       font-size: 36px;
       font-family: $base-f-family;
-      color: rgb(255, 255, 255);
+      color: $white;
       font-weight: bold;
       line-height: 1.6;
       text-align: center;
@@ -151,7 +151,7 @@
       q {
         font-size: 24px;
         font-family: $base-f-family;
-        color: rgb(255, 255, 255);
+        color: $white;
         line-height: 2.5;
         left: 473.266px;
         top: 3327.469px;
@@ -297,11 +297,11 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px 0px;
-  height: 708px;
+  height: 800px;
 
   .container--big {
-    margin: 0 auto;
-    padding: 15px 0px;
+    // margin: 0 auto;
+    padding: 15px;
     background-color: #f4f6f5;
 
 
@@ -319,6 +319,7 @@
 
     .products_tabs {
       text-align: center;
+      margin: 15px;
 
       &-item {
         background-color: $white;
@@ -337,10 +338,41 @@
           margin: 6px;
           width: 85px;
           height: 40px;
+          cursor: pointer;
         }
   
         a:hover {
-          background-color: darken($red, 15%);
+          background-color: $red;
+        }
+      }
+    }
+
+    .products_items {
+      text-align: center;
+      margin: 15px;
+
+      &-item {
+        background-color: $white;
+        display: inline-flex;
+        justify-content: space-around;
+        align-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+  
+        a {
+          font-family: $base-f-family;
+          font-size: 14px;
+          color: #555c60;
+          padding: 6px 8px;
+          margin: 6px;
+          width: 124px;
+          height: 30px;
+          cursor: pointer;
+        }
+  
+        a:hover {
+          background-color: darken($white, 5%);
         }
       }
     }

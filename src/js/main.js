@@ -36,3 +36,9 @@ $(document).ready(function() {
             .removeClass('.tab-active')
     })
 })
+
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
