@@ -31,3 +31,13 @@ $btn-base-hover: darken($btn-base-bg, 15%);
 $btn-warn-bg: $warn-color;
 $btn-warn-hover: darken($btn-warn-bg, 15%);
 
+// media queries
+
+$desktop-large-: 1359px;
+$desktop-df: 1023px;
+$tablet-df: 767px;
+
+$desktop-large-mf: 1359px;
+$desktop-mf: 1023px;
+$tablet-mf: 767px;
+

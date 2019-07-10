@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    $('js-login').on('click', function()
+    $('header_btns').slideToggle(400)
+    )
+});
+
+$(document).ready(function() {
     $('.js_tabs-link').on('click', function() {
         var tabNum = $(this).attr('href')
         $(this).addClass('tab-active')
@@ -36,7 +42,28 @@ $('.trending_slides').slick({
     centerMode: true,
     buttons: false,
     prevArrow: false,
-    nextArrow: false
+    nextArrow: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToshow:3
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToshow:2,
+                centerMode: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToshow:1,
+            }
+        }
+    ]
 });
 
 

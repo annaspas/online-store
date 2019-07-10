@@ -22,3 +22,17 @@ body {
   width: 100%;
   flex-grow: 1;
 }
+
+.desktop-hidden  {
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-hidden {
+
+  @media(max-width: 767px){
+    display: none;
+  }
+}
