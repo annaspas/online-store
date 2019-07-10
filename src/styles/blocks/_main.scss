@@ -403,16 +403,18 @@
 
     .row { 
       margin: 0 35px;
+      width: 100%;
+      display: inline-flex;
     }
 
     .trending_tabs {
       padding: 5px;
       margin: 5px;
+    }
 
-      .row {
-        width: 100%;
-        display: inline-flex;
-      }
+    .testimonials_arrows {
+      background-color: transparentize $white;
+      border: $white;
     }
 
     .slick-dots {

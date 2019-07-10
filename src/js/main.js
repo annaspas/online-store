@@ -44,8 +44,9 @@ $('.trending_slides').slick({
     slidesToShow: 1,
     slidesToScroll: 4,
     centerMode: true,
-    prevArrow: '<button class="testimonials_arrows testimonials_prev"><i class="icon-angle-down"></i></button>',
-    nextArrow: '<button class="testimonials_arrows testimonials_next"><i class="icon-angle-down"></i></button>',
+    buttons: false,
+    prevArrow: false,
+    nextArrow: false
 });
 
 
