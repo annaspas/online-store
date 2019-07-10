@@ -311,10 +311,10 @@
 
 
       h2 {
-      font-family: $base-f-family;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1.7;
+        font-family: $base-f-family;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.7;
       }
     }
 
@@ -330,8 +330,8 @@
         text-align: center;
         flex-wrap: wrap;
         margin-bottom: 5px;
-  
-        a {
+
+        .js_tabs-link {
           font-family: $base-f-family;
           font-size: 14px;
           color: #555c60;
@@ -341,9 +341,11 @@
           height: 40px;
           cursor: pointer;
         }
-  
-        a:hover {
+
+        .tab-active {
+          opacity: 1;
           background-color: $red;
+          cursor: pointer;
         }
       }
     }
@@ -360,7 +362,7 @@
         text-align: center;
         flex-wrap: wrap;
         margin-bottom: 5px;
-  
+
         a {
           font-family: $base-f-family;
           font-size: 14px;
@@ -371,10 +373,17 @@
           height: 30px;
           cursor: pointer;
         }
-  
+
         a:hover {
           background-color: darken($white, 5%);
         }
+      }
+    }
+
+    .products_tabs-content {
+
+      .products_tab:not(.tab-active) {
+        display: none;
       }
     }
   }
@@ -392,48 +401,48 @@
     padding: 15px;
     text-align: center;
 
-      .trending_tabs {
-        padding: 5px;
-        margin: 5px;
+    .trending_tabs {
+      padding: 5px;
+      margin: 5px;
 
-        .row {
-          width: 100%;
-          display: inline-flex;
-        }
-      } 
+      .row {
+        width: 100%;
+        display: inline-flex;
+      }
+    }
 
-      .slick-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px auto 0;
-        color: $green;
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto 0;
+      color: $green;
 
-        li.slick-active button {
-          background-color: transparent;
+      li.slick-active button {
+        background-color: transparent;
       }
 
-        button {
-          transition: background-color .3s ease;
-          background-color: #fff;
-          border: 1px solid #fff;
-          border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          padding: 0;
-          outline: none;
-          width: 10px;
-          height: 10%;
-          margin: 0 3px;
-          font-style: 0;
-          text-indent: -999px;
-          overflow: hidden;
-          -webkit-transition: background-color .3s ease;
-          -moz-transition: background-color .3s ease;
-          -ms-transition: background-color .3s ease;
-          -o-transition: background-color .3s ease;
+      button {
+        transition: background-color .3s ease;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        padding: 0;
+        outline: none;
+        width: 10px;
+        height: 10%;
+        margin: 0 3px;
+        font-style: 0;
+        text-indent: -999px;
+        overflow: hidden;
+        -webkit-transition: background-color .3s ease;
+        -moz-transition: background-color .3s ease;
+        -ms-transition: background-color .3s ease;
+        -o-transition: background-color .3s ease;
       }
     }
   }
