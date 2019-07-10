@@ -395,11 +395,15 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px 0px;
-  height: 600px;
+  height: 700px;
 
   .slider {
     padding: 15px;
     text-align: center;
+
+    .row { 
+      margin: 0 35px;
+    }
 
     .trending_tabs {
       padding: 5px;
@@ -416,7 +420,6 @@
       align-items: center;
       justify-content: center;
       margin: 10px auto 0;
-      color: $green;
 
       li.slick-active button {
         background-color: transparent;
@@ -424,8 +427,8 @@
 
       button {
         transition: background-color .3s ease;
-        background-color: #fff;
-        border: 1px solid #fff;
+        background-color: $green;
+        border: 1px solid lighten($green, 15%);
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
