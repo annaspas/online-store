@@ -170,6 +170,7 @@
     margin: 0 auto;
     padding: 20px 0px;
     height: 725px;
+    display: block;
 
     .banner {
         background-color: #b5b5b5;
@@ -184,9 +185,8 @@
         height: 218px;
         width: 649px;
         background-color: $green;
-        position: relative;
-        display: flex;
-        margin: 115px 220px;
+        top: calc(60%-2px);
+        left: calc(25%-2px);
 
         h3 {
             font-style: 30px;
