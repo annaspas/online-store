@@ -1,71 +1,95 @@
 .header {
 
-  &-top {
+  .header-top {
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    padding: 25px 0;
+    text-align: le;
+    justify-content: center;
+    height: 100px;
+    padding: 15px 0 ;
   }
 
-  &_dropdown {
+  .header_dropdown {
 
-    &-main {
-      transition: opacity .3s eas, visibility .3 ease;
-      visibility: hidden;
-      position: absolute;
-      right: 0;
-      z-index: 3;
-      background-color: $white;
+    &:hover {
 
-      &-btn {
-        border-radius: 50%;
-        width: 15px;
-        height: 20px;
-        padding: 12px;
-        margin: 0 10px;
-        position: relative;
-
-        i {
-          width: 5px;
-          height: 3px;
-          margin: 0px -4px;
-          position: absolute;
-        }
+      .header_dropdown-main {
+        display: block;
       }
     }
+
+    .header_dropdown-main {
+      transition: opacity .3s eas, visibility .3 ease;
+      visibility: visible;
+      background-color: $white;
+      position: absolute;
+      display: none;
+      z-index: 4;
+
+      ul {
+        padding: 15px;
+      }
+      
+      
+    }
+
+    .header_dropdown-btn {
+      border-radius: 50%;
+      width: 20px;
+      height: 30px;
+      padding: 17px;
+      margin: 0 25px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    &-count {
+      display: flex;
+      margin: -5px -15px;
+      padding: 0 5px;
   }
 
-  &_call-link {
+  }
+
+  .header_call-link {
     padding: 0 15px;
     margin: 0 25px;
   }
 
-  .topnav {
-    background-color: $var-black;
-    overflow: hidden;
-    font-size: 14px;
-    font-family: $base-f-family;
+  .header_main {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .topnav {
+      background-color: $var-black;
+      overflow: hidden;
+      font-size: 14px;
+      font-family: $base-f-family;
+      height: 35px;
+      text-align: center;
+  
+      a {
+        color: #a3a6a8;
+        text-align: center;
+        padding: 20px 26px;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: $base-f-family;
+      }
+    
+       a:hover {
+        background-color: #a3a6a8;
+        color: black;
+      }
+    
+       .icon {
+        display: none;
+      }
+    }
   }
 
-  .topnav a {
-    float: left;
-    display: block;
-    color: #a3a6a8;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Roboto";
-    margin-left: 30px;
-  }
-
-  .topnav a:hover {
-    background-color: #a3a6a8;
-    color: black;
-  }
-
-  .topnav .icon {
-    display: none;
-  }
+   
 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
@@ -95,27 +119,24 @@
 
   .header_tools {
     display: flex;
-    justify-content: space-between;
-    left: 480px;
-    position: relative;
+    justify-content: center;
 
     .header_call-link {
       font-size: 15px;
       font-family: $base-f-family;
       color: $gray;
-      line-height: 1.6;
-      text-align: left;
+      padding: 3em 0;
 
-      span {
+      .red {
         color: $red;
       }
     }
   }
 }
 
-&_login {
+.header_login {
 
-  &-btn {
+  .header-btn {
     background-color: $gray;
     border: none;
     outline: none;
