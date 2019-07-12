@@ -156,8 +156,10 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
+    min-width: 600px;
+    min-width: 600px;
     font-size: 11px;
     h1 {
       font-size: 16px;
@@ -312,6 +314,164 @@ body {
         }
      }
     }
+}
 
+@media (max-width: 639px) {
+  body {
+    min-width: 300px;
+    font-size: 11px;
+    h1 {
+      font-size: 13px;
+    }
+  
+    h2 {
+      font-size: 9px;
+    }
+  
+    h3 {
+      font-size: 7px;
+    }
+  
+    a {
+      font-size: 5px;
+      line-height: 1;
+    }
+  
+    header { 
+      font-size: 9px;
+  
+      .section_hero {
+        h1 {
+          font-size: 13px;
+        }
+      
+        h2 {
+          font-size: 9px;
+        }
+    
+        h3 {
+          font-size: 7px;
+        }
+    
+        a {
+          font-size: 5px;
+          line-height: 1;
+        }
+      }
+  
+      .section_products {
+        font-size: 5px;
+        line-height: 1;
+  
+        h2 {
+          font-size: 9px;
+        }
+    
+        h3 {
+          font-size: 7px;
+        }
+    
+        a {
+          font-size: 5px;
+          line-height: 1;
+        }
+      }
+  
+      .trending_products {
+        font-size: 5px;
+        line-height: 1;
+  
+        h2 {
+          font-size: 9px;
+        }
+    
+        h3 {
+          font-size: 7px;
+        }
+    
+        a {
+          font-size: 5px;
+          line-height: 1;
+        }
+      }
+  
+      .section_services {
+        font-size: 5px;
+        line-height: 1;
+  
+        h2 {
+          font-size: 9px;
+        }
+    
+        h3 {
+          font-size: 7px;
+        }
+    
+        a {
+          font-size: 5px;
+          line-height: 1;
+        }
+      }
+  
+      .section_benefits {
+        font-size: 5px;
+        line-height: 2;
+  
+        h2 {
+          font-size: 9px;
+        }
+    
+        h3 {
+          font-size: 7px;
+        }
+    
+        a {
+          font-size: 5px;
+          line-height: 1;
+        }
+      }
+  
+      .section_tutorials {
+        font-size:5px;
+        line-height: 2;
+  
+        h2 {
+          font-size: 9px;
+        }
+    
+        h3 {
+          font-size: 7px;
+        }
+  
+        p {
+          font-size: 5px;
+        }
+    
+        a {
+          font-size: 5px;
+          line-height: 1;
+        }
+      }
+  
+      .footer {
+          h1 {
+            font-size: 9px;
+          }
+        
+          h2 {
+            font-size: 9px;
+          }
+        
+          h3 {
+            font-size: 7px;
+          }
+        
+          a {
+            font-size: 5px;
+            line-height: 1;
+          }
+        }
+     }
+    }
 }
 
