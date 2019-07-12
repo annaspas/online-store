@@ -5,6 +5,7 @@
     height: 600px;
 
     .hero {
+        width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         filter: grayscale(90%);
@@ -35,10 +36,11 @@
         }
 
         .search-container {
+            width: 100%;
             .input {
                 border-radius: 4px;
                 background-color: $white;
-                width: 667px;
+                width: 230px;
                 height: 44px;
                 position: relative;
                 padding: 0;
@@ -53,7 +55,7 @@
             }
 
             button {
-                width: 60px;
+                width: 30px;
                 height: 45px;
                 z-index: 3;
                 opacity: 0.4;
@@ -153,13 +155,10 @@
     }
 
     .row {
+        width: 100%;
         margin: 0 -15px;
         display: flex;
         flex-wrap: wrap;
-    }
-
-    [class^='col'] {
-        padding: 0 15px;
     }
 }
 
@@ -290,6 +289,7 @@
         }
 
         .products_tabs {
+            width: 100%;
             text-align: center;
             margin: 15px;
 
@@ -322,6 +322,7 @@
         }
 
         .products_items {
+            width: 100%;
             text-align: center;
             margin: 15px;
 
