@@ -36,3 +36,54 @@ body {
     display: none;
   }
 }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  display: flex;align-items: center;
+  margin-bottom: 40px;
+
+  &_item {
+    font-size: 15px;
+    color: #263238;
+
+    &:not(:first-of-type) {
+
+      &:before {
+        content: '-';
+        color: $green;
+        margin: 10px;
+      }
+    }
+  }
+
+  &_link {
+    color: #b0bec5;
+  }
+}
+
+.content {
+  width: calc(100%-300px);
+  padding: 0 15px;
+
+  &:only-child {
+    width: 100%;
+  }
+
+  &_inner {
+    display: flex;
+    margin: 0 -15px;
+  }
+
+  &-row {
+    display: flex;flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &_col {
+    width: calc(100%/3);
+    padding: 15px;
+    max-width: 300px;
+    min-width: 290px;
+  }
+}

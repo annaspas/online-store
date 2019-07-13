@@ -56,5 +56,19 @@ $('.trending_slides').slick({
     ]
 });
 
+$(document).ready(function() {
+    $(".js_range").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 600,
+        prefix: "$",
+        skin: "round"
+    });
+    }); 
+
+
+
 
           

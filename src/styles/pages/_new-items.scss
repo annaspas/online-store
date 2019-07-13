@@ -1,0 +1,48 @@
+.irs {
+
+  > .irs {
+    height: 100%;
+  }
+
+  &-min,
+  &-max {
+    display: none;
+  }
+
+  &--round {
+
+    .irs-from,
+    .irs-to,
+    .irs-single {
+      top: 100%;
+      color: #78909c;
+      font-size: 15px;
+      padding: 5px;
+      line-height: 1px;
+      background-color: transparent;
+    }
+
+    ::before {
+      display: none;
+      background-color: transparent;
+    }
+
+    .irs-handle {
+      border-color: $green;
+      width: 16px;  
+      height: 16px;
+      top: 31px;
+    }
+
+    .irs-line {
+      background-color: #f2f5f8;
+      height: 5px;
+    }
+
+    .irs-bar {
+      background-color: $var-black;
+      height: 5px;
+    }
+  }
+
+}
