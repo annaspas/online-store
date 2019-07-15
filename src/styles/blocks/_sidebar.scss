@@ -1,61 +1,67 @@
 .sidebar {
-    width: 300px;
+  width: 300px;
+  padding: 0 15px;
+
+  .sidebar_category {
+    border: 2px solid #dcdcdd;
+    height: 268px;
+    background-color: $white;
     padding: 0 15px;
+    margin: 30px auto;
 
-    .sidebar_category {
-        border: 2px solid #dcdcdd;
-        height: 268px;
-        background-color: $white;
-        padding: 0 15px;
-        margin: 30px auto;
+    .menu_title {
+      font-size: 20px;
+      font-family: $base-f-family;
+      color: $var-black;
+      font-weight: 500;
+      line-height: 3;
+      text-align: left;
 
-        .menu_title {
-            font-size: 20px;
-            font-family: $base-f-family;
-            color: $var-black;
-            font-weight: 500;
-            line-height: 3;
-            text-align: left;
-            }
-        }
+      .block-line {
+        width: 208px;
+        height: 2px;
+        background: #dcdcdd;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
 
-        .menu_main {
-            display: inline-block;
-            padding: 0 15px;
-            margin: 0 auto;
+  .menu_main {
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 auto;
 
-            a {
-                display: block;
+    a {
+      display: block;
 
-                .fa-angle-right {
-                    color: $green;
-                }
-                
-                span {
-                    font-size: 15px;
-                    font-family: $base-f-family;
-                    color: #263238;
-                    text-align: left;
-                    line-height: 2.6;
-                    }
+      .fa-angle-right {
+        color: $green;
+      }
 
-                    i {
-                        columns: $var-black;
-                    }
-            }
-            
+      span {
+        font-size: 15px;
+        font-family: $base-f-family;
+        color: #263238;
+        text-align: left;
+        line-height: 2.6;
+      }
 
-            .product_card-counter {
-                    font-size: 15px;
-                    font-family: $base-f-family;
-                    color: #90a4ae;
-                    text-align: right;
-                    line-height: 2.6;
-                    
-        }
+      i {
+        columns: $var-black;
+      }
     }
 
-.sidebar_block {
+    .product_card-counter {
+      font-size: 15px;
+      font-family: $base-f-family;
+      color: #90a4ae;
+      text-align: right;
+      line-height: 2.6;
+    }
+  }
+
+  .sidebar_block {
     border: 2px solid #dcdcdd;
     height: 262px;
     background-color: $white;
@@ -63,34 +69,78 @@
     margin: 30px auto;
 
     .sidebar_title {
-        font-size: 20px;
-        font-family: $base-f-family;
-        color: $var-black;
-        line-height: 3;
-        text-align-last: left;
-        font-weight: 500;
+      font-size: 20px;
+      font-family: $base-f-family;
+      color: $var-black;
+      line-height: 3;
+      text-align-last: left;
+      font-weight: 500;
 
-    }
-
-    .range_btn {
-        height: 48px;
-        width: 206px;
-        text-align: center;
-        padding: 10px 25px;
-        color: $white;
-        background: $green;
-        font-size: 15px;
-        font-family: $base-f-family;
-        margin-top: 50px;
-        margin-left: 15px;
-    }
-
-    .block-line {
+      .block-line {
         width: 208px;
         height: 2px;
         background: #dcdcdd;
         text-align: center;
         margin: 0 auto;
       }
+
+    }
+
+    .range_btn {
+      height: 48px;
+      width: 206px;
+      text-align: center;
+      padding: 10px 25px;
+      color: $white;
+      background: $green;
+      font-size: 15px;
+      font-family: $base-f-family;
+      margin-top: 50px;
+      margin-left: 15px;
+    }
+
+
+  }
 }
+
+.sidebar_sellers {
+  border: 2px solid #dcdcdd;
+  height: 1075px;
+  background-color: $white;
+  padding: 0 15px;
+  margin: 30px auto;
+
+  .sellers_title {
+    font-size: 20px;
+    font-family: $base-f-family;
+    color: $var-black;
+    line-height: 3;
+    text-align-last: left;
+    font-weight: 500;
+    margin: 15 auto;
+    padding: 15px;
+
+    .block-line {
+      width: 208px;
+      height: 2px;
+      background: #dcdcdd;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .sellers_all-btn {
+    height: 48px;
+    width: 206px;
+    text-align: center;
+    padding: 10px 25px;
+    color: $white;
+    background: $green;
+    font-size: 15px;
+    font-family: $base-f-family;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+
+
 }

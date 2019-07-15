@@ -23,7 +23,7 @@ body {
   flex-grow: 1;
 }
 
-.desktop-hidden  {
+.desktop-hidden {
 
   @media(min-width: 768px) {
     display: none;
@@ -32,7 +32,7 @@ body {
 
 .mobile-hidden {
 
-  @media(max-width: 767px){
+  @media(max-width: 767px) {
     display: none;
   }
 }
@@ -40,8 +40,11 @@ body {
 .breadcrumbs {
   display: flex;
   align-items: center;
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
   margin-bottom: 40px;
+  margin-left: 66px;
+  margin-top: 30px;
 
   &_item {
     font-size: 15px;
@@ -63,10 +66,19 @@ body {
 }
 
 .content {
-  width: calc(100%-300px);
+  width: calc(100% - 300px);
   padding: 0 15px;
   text-align: center;
   margin: 0 auto;
+
+  &-toolbar {
+    width: 870px;
+    height: 65px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
 
   &:only-child {
     width: 100%;
@@ -74,7 +86,7 @@ body {
 
   &_inner {
     display: flex;
-    margin: 0 -15px;
+    margin: 10px 50px;
   }
 
   &_row {
@@ -84,9 +96,45 @@ body {
   }
 
   &_col {
-    width: calc(100%/3);
+    width: calc(100% / 3);
     padding: 15px;
-    max-width: 300px;
+    max-width: 350px;
     min-width: 290px;
+    margin: 40px auto;
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.pages_tabs {
+  width: 100%;
+  text-align: left;
+  margin: 15px;
+
+  &-item {
+    background-color: $white;
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+    .js_tabs-link {
+      font-family: $base-f-family;
+      font-size: 14px;
+      color: #555c60;
+      padding: 6px 8px;
+      margin: 6px;
+      width: 35px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .tab-active {
+      opacity: 1;
+      background-color: $red;
+      cursor: pointer;
+    }
   }
 }
