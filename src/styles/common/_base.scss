@@ -107,29 +107,22 @@ body {
         }
       }
 
-      .btn_sort {
-        color: transparent;
-        background: none;
-        text-align: center;
-          margin-top: 15px;
-          width: 145px;
-          height: 30px;
-          border: none;
-          overflow: hidden;
+      .btn_sort-order:hover {
+        color: $green;
+      }
 
-        .menu_sort-list {
-          border: 1px solid transparent;
-          background: none;
-          overflow: hidden;
-          background: none;
-          font-size: 20px;
-          font-family: $base-f-family;
-          line-height: 1.7;
-          color: #707070;
-          text-decoration: none;
-          cursor: pointer;
-        }
-      }     
+      .menu_sort-list {
+        width: 145px;
+        height: 56px;
+        font-size: 21px;
+        font-family: $base-f-family;
+        line-height: 1.7;
+        color: #707070;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+      }
     }
 
     &-right {
@@ -141,20 +134,24 @@ body {
       .btn_layout {
         color: #90a4ae;
         background: none;
-          margin-top: 15px;
-          width: 45px;
-          height: 30px;
-          border: none;
-          overflow: hidden;
-          font-size: 20px;
-          font-family: $base-f-family;
-          line-height: 1.7;
-          text-decoration: none;
-          cursor: pointer;
+        margin-top: 15px;
+        width: 45px;
+        height: 30px;
+        border: none;
+        overflow: hidden;
+        font-size: 20px;
+        font-family: $base-f-family;
+        line-height: 1.7;
+        text-decoration: none;
+        cursor: pointer;
       }
-      
+    }
+
+    .btn_layout:hover {
+      color: $green;
     }
   }
+
 
   &:only-child {
     width: 100%;
@@ -171,7 +168,7 @@ body {
     margin: 0 -15px;
   }
 
-  &_col {
+  &-col {
     width: calc(100% / 3);
     padding: 15px;
     max-width: 350px;
@@ -204,6 +201,7 @@ body {
       margin: 6px;
       width: 35px;
       height: 40px;
+      text-align: center;
       cursor: pointer;
     }
 
