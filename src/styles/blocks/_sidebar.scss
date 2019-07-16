@@ -24,7 +24,7 @@
         text-align: center;
         margin: 0 auto;
         z-index: 3;
-        margin: 5px;
+        margin: 2px auto;
       }
     }
   }
@@ -83,7 +83,7 @@
         height: 2px;
         background: #dcdcdd;
         text-align: center;
-        margin: 0 auto;
+        margin: 2px auto;
       }
 
     }
@@ -140,9 +140,19 @@
     background: $green;
     font-size: 15px;
     font-family: $base-f-family;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 15px;
   }
 
+  .sellers_content {
 
+    .block-line {
+      width: 208px;
+      height: 2px;
+      background: #dcdcdd;
+      text-align: center;
+      margin: 10px auto;
+    }
+  }
+  
 }
