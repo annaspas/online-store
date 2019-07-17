@@ -2,6 +2,13 @@
   width: 300px;
   padding: 0 15px;
 
+  @media (max-width: $tablet-df) {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+
   .sidebar_category {
     border: 2px solid #dcdcdd;
     height: 268px;
@@ -16,6 +23,14 @@
       font-weight: 500;
       line-height: 3;
       text-align: left;
+      border: none;
+      outline: none;
+      background: transparent;
+      pointer-events: none;
+
+      @media (max-width: $tablet-df) {
+        pointer-events: auto;        
+      }
 
       .block-line {
         width: 208px;
@@ -52,6 +67,10 @@
       i {
         columns: $var-black;
       }
+
+      @media (max-width: $tablet-df) {
+        display: none;
+        }
     }
 
     .product_card-counter {
@@ -70,6 +89,10 @@
     padding: 0 15px;
     margin: 30px auto;
 
+    @media (max-width: $tablet-df) {
+      display: none;
+      }
+
     .sidebar_title {
       font-size: 20px;
       font-family: $base-f-family;
@@ -77,6 +100,14 @@
       line-height: 3;
       text-align-last: left;
       font-weight: 500;
+      border: none;
+      outline: none;
+      background: transparent;
+      pointer-events: none;
+
+      @media (max-width: $tablet-df) {
+        pointer-events: auto;        
+      }
 
       .block-line {
         width: 208px;
@@ -121,6 +152,17 @@
     font-weight: 500;
     margin: 15 auto;
     padding: 15px;
+    border: none;
+      outline: none;
+      background: transparent;
+      pointer-events: none;
+
+      .sidebar_main {
+        @media (max-width: $tablet-df) {
+          pointer-events: auto;        
+        }
+      }
+
 
     .block-line {
       width: 208px;
@@ -146,6 +188,13 @@
 
   .sellers_content {
 
+
+    .sellers_main {
+        @media (max-width: $tablet-df) {
+          pointer-events: auto;        
+        }
+      }
+
     .block-line {
       width: 208px;
       height: 2px;
@@ -156,3 +205,5 @@
   }
   
 }
+
+

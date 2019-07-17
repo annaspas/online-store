@@ -71,6 +71,11 @@ body {
   text-align: center;
   margin: 0 auto;
 
+  @media (max-width: $tablet-df) {
+    width: 100%;
+    padding-top: 30px;
+  }
+
   &_toolbar {
     width: 870px;
     height: 60px;
@@ -80,6 +85,14 @@ body {
     position: relative;
     display: flex;
     border: 2px solid #dcdcdd;
+
+    @media (max-width: $tablet-df) {
+      max-width: 290px;
+      width: 100%;
+      margin: 0 auto 20px;
+      justify-content: center;
+      padding: 0 15px;
+    }
 
     &-left {
       position: absolute;
@@ -133,6 +146,10 @@ body {
       margin-left: auto;
       margin-right: 0;
 
+      @media (max-width: $tablet-df) {
+        display: none; 
+      }
+
       .btn_layout {
         color: #90a4ae;
         background: none;
@@ -168,10 +185,48 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
+
+    &.content_list {
+      display: block;
+
+      .content_col {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .product_card {
+        max-width: 100%;
+        flex-direction: row;
+
+        &-img {
+          max-width: 220px;
+        }
+  
+        &-inner {
+          flex-grow: 1;
+
+          @media (max-width: $tablet-df) {
+            display: block;
+          }
+        }
+  
+        &-main {
+          padding: 15px 15px 14px;
+        }
+  
+        &-title {
+          margin-bottom: 4px;
+        }
+  
+        &-footer {
+          padding: 10px 15px;
+        }
+      }
+    }
   }
 
   &_col {
-    width: calc(100% / 3);
+    width: calc(100%/3);
     padding: 15px;
     max-width: 350px;
     min-width: 290px;
