@@ -31,3 +31,26 @@
     z-index: 510;
   }
 }
+
+.header_btns {
+
+  @media (max-width: $tablet-df) {
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+
+
+    .header_login-btn {
+        background-color: transparent;
+        border: none;
+    }
+
+  }
+}
+
+
+.btn_base {
+  margin-right: 4px;
+}

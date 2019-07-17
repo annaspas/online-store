@@ -1,4 +1,5 @@
 .header {
+  position: relative;
 
   .header-top {
     margin: 0 auto;
@@ -89,7 +90,12 @@
     }
   }
 
-   
+   @media(max-width:$desktop-df) {
+     position: absolute;
+     text-outline: 100%;
+     left: 0;
+     right: 0;
+   }
 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
@@ -149,6 +155,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+  }
+}
+
+.logo {
+  @media($tablet-df) {
+    max-width: 80px;
+    display: block;
   }
 }
 
