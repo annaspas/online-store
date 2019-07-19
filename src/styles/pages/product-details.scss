@@ -6,10 +6,10 @@
     width: 100%;
 
     .product_details {
-        width: 48%;
+        width: 60%;
         text-align: center;
         justify-content: center;
-        padding: 0px 15px;
+        margin: 0 auto;
     }
 
     img {
@@ -49,7 +49,7 @@
             border-radius: 3%;
             cursor: pointer;
             margin: 9px;
-            padding: 10px;
+            padding: 5px;
         }
         .btn_screnshot {
             background-color: #455a64;
@@ -60,7 +60,7 @@
             border-radius: 3%;
             cursor: pointer;
             margin: 9px;
-            padding: 10px;
+            padding: 5px;
         }
         .btn_doc {
             background-color: $green;
@@ -71,7 +71,7 @@
             border-radius: 3%;
             cursor: pointer;
             margin: 9px;
-            padding: 10px;
+            padding: 5px;
         }
     }
 
@@ -81,7 +81,7 @@
         right: 0px;
         margin-top: 4px;
         padding: 0 15px;
-        margin-left: 70px;
+        margin-left: 130px;
         cursor: pointer;
 
         a {
@@ -135,7 +135,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    top: 50px;
+    margin-top: 15px;
 
     .features_tabs-item {
         background-color: $white;
@@ -205,6 +205,31 @@
 
         @media (max-width: $tablet-df) {
             display: none;
+        }
+    }
+}
+
+.more_btn {
+    margin-top: 35px;
+    width: 860px;
+    height: 36px;
+    background-color: #fff;
+    border: 0.1px solid #dcdcdc;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.sidebar_main {
+    .info_product {
+        display: flex;
+
+        .block-line {
+            width: 208px;
+            height: 2px;
+            background: #dcdcdd;
+            text-align: center;
+            margin: 2px auto;
         }
     }
 }
