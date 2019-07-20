@@ -1,0 +1,68 @@
+.popup {
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    position: relative;
+
+    &-close.mfp-close {
+        color: $white;
+        border: none;
+        padding: 0;
+        outline: none;
+        opacity: 0;
+    }
+
+    &_holder {
+        background-color: $green;
+        
+        min-height: 385px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &_block {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    &_input {
+        position: relative;
+        color: $white;
+        padding: 10px 40px;
+        line-height: 20px;
+        font-size: 14px;
+        width: 100%;
+        z-index: 2;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        outline: none;
+
+        &::placeholder {
+            color: $white;
+        }
+
+        &-holder {
+            position: relative;
+            background-color: #76ae36;
+
+            i {
+                position: absolute;
+                color: $white;
+                left: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    visibility: hidden;
+}

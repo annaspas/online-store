@@ -2,6 +2,10 @@ body {
   font: $base-f-size $base-f-family;
 }
 
+input {
+  font-family: $base-f-family;
+}
+
 .wrapper {
   width: 100%;
   display: flex;

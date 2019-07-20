@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="styles/styles.min.css">
 </head>
 <body>
@@ -70,7 +71,7 @@
                         <div class="header_btns-drop">
                             <button class="header_login-btn js-login"> <i class="fas fa-user desktop-hidden"></i> </button>
                         <div class="header_btns mobile-hidden">
-                            <button class="btn btn_base btn--radius">Login</button>
+                            <button class="btn btn_base btn--radius js_login-modal">Login</button>
                             <button class="btn btn_warn btn--radius">Register</button>
                         
                         
@@ -1354,7 +1355,32 @@
         </footer>
     </div>
 </div>
+<div id="login-modal" class="mfp-hide popup">
+    <div class="popup_holder">
+            <button title="Close (Esc)" type="button" class="mfp-close popup-close">×</button>
+        <div class="popup_block">
+            <div class="popup_title">Login</div>
+            <form action="" class="popup_form">
+                <div class="popup_input-holder">
+                        <i class="fas fa-user"></i>
+                    <input name="name" class="input-hidden">
+                    <input name="name" type="text" autocomplete="off" class="popup_input" placeholder="Name">
+                </div>
+                <div class="popup_input-holder">
+                        <i class="fas fa-lock"></i>
+                    <input name="pass" class="input-hidden">
+                    <input name="pass" type="password" autocomplete="off" class="popup_input" placeholder="Password">
+                    </div>
+                    <div class="popup_form-footer"><input type="submit" value="submit" class="popup-btn">
+                        <a href="" class="popup_link--create"><i class="fas fa-edit"></i> Create an Account?</a>
+                    </div>
+                    <a href="" class="popup_link">Lost Password?</a>
+            </form>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>

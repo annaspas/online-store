@@ -1,4 +1,17 @@
 $(document).ready(function() {
+
+    $('.js_login-modal').magnificPopup({
+        type: 'inline',
+        items: {
+            src: '#login-modal'
+        }
+    });
+
+    $('.form_input-file').on('change', function() {
+        var fileVal = $(this).val();
+        $(this).next('.form_file-fake').find('.form_file').text(fileVal);
+    })
+
 $('.js-login').on('click', function(){
     $('.header_btns').slideToggle(400)
     })
