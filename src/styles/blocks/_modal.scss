@@ -97,6 +97,11 @@
                 transform: translateY(-50%);
                 font-size: 13px;
             }
+
+            .popup-close {
+                color: $white;
+                background-color: none;
+            }
         }
     }
 }
