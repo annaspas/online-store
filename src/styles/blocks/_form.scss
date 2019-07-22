@@ -1,7 +1,7 @@
 .container {
     background-color: #f4f6f5;
     padding: 50px 25px;
-    
+
     .products_form {
         background-color: $white;
         padding: 20px 35px;
@@ -9,6 +9,14 @@
     .form {
         &_row {
             display: flex;
+
+            @media screen and (max-width: 600px) {
+                &_row {
+                    width: 100%;
+                    margin-top: 0;
+                    display: block;
+                }
+            }
 
             &:not(:last-child) {
                 margin-bottom: 20px;
@@ -68,7 +76,14 @@
                         height: 40px;
                     }
                 }
-                
+
+                @media screen and (max-width: 600px) {
+                    &-holder {
+                        width: 100%;
+                        margin-top: 0;
+                        display: block;
+                    }
+                }
             }
 
             &-file {
