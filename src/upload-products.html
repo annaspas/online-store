@@ -98,7 +98,6 @@
                 </div>
             </div>
         </header>
-
         <main class="main">
             <div class="container">
                 <section class="section_hero">
@@ -117,15 +116,33 @@
                     </div>
                 </section>
                 <div class="container">
+                    <ul class="breadcrumbs">
+                            <li class="breadcrumbs_item">
+                                <a href=/ class="breadcrumbs_link">Home</a>
+                            </li>
+                            <li class="breadcrumbs_item">Upload Product</li>
+                        </ul>
                     <form action="#" class="products_form">
                         <div class="form_block">
-                            <h2 class="form_block-title"></h2>
+                            <h2 class="form_block-title">Upload Your item</h2>
                             <div class="form_main">
                                 <div class="form_row">
-                                    <label for="name" class="form_label">Product name <spa class="green">*</spa></label>
+                                        <label for="name" class="form_label">Select Categories <span class="green">*</span></label>
+                                        <select class="form_input-holder" id="select_categories">
+                                            <option value="select">Select</option>
+                                        </select>
+                                </div>
+                                <div class="form_row">
+                                    <label for="name" class="form_label">Product name <span class="green">*</span></label>
                                     <div class="form_input-holder">
                                         <input id="name" type="text" class="form_input" placeholder="Enter your product name here">
                                     </div>
+                                </div>
+                                <div class="form_row">
+                                        <label for="name" class="form_label">Product Description <span class="green">*</span></label>
+                                        <div class="form_input-holder">
+                                            <textarea class="form_input" placeholder="<h1> Type your text  here </h1/>"></textarea>
+                                        </div>
                                 </div>
                                 <div class="form_row">
                                         <label for="file" class="form_label">Upload main file <span class="green">*</span></label>
@@ -136,16 +153,61 @@
                                                 <div class="form_file">No file chosen</div>
                                             </div>
                                         </div>
+                                </div>
+                                <div class="form_row">
+                                        <label for="file" class="form_label">Upload Screenshots <span class="green">*</span></label>
+                                        <div class="form_input-holder">
+                                            <input id="file" type="file" class="form_input-file">
+                                            <div class="form_file-fake">
+                                                <div class="form_file-btn">Choose file</div>
+                                                <div class="form_file">No file chosen</div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="form_row">
+                                        <label for="name" class="form_label">File Included <span class="green">*</span></label>
+                                        <select class="form_input-holder" id="select_categories">
+                                            <option value="select">Select File Type </option>
+                                        </select>
+                                </div>
+                                <div class="form_row">
+                                    <label for="name" class="form_label">File Dimensions <span class="green">*</span></label>
+                                    <div class="form_input-holder">
+                                        <input id="name" type="text" class="form_input" placeholder="Enter the item  dimentionss here ...">
                                     </div>
+                                </div>
+                                <div class="form_row">
+                                    <label for="name" class="form_label">Item Tags <span class="green">*</span></label>
+                                    <div class="form_input-holder">
+                                        <input id="name" type="text" class="form_input" placeholder="Enter Tag Here">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form_block">
-                            <h2 class="form_block-title"></h2>
-                            <div class="form_main"></div>
+                            <h2 class="form_block-title">Set Your Price (US$)</h2>
+                            <div class="form_block-line"></div>
+                            <div class="form_main">
+                                <div class="form_row">
+                                    <label for="name" class="form_label">Regular License <span class="green">*</span></label>
+                                    <div class="form_input-holder">
+                                        <input id="name" type="text" class="form_input" placeholder="$00.00">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <label for="name" class="form_label" style="color: #b0bec5">Extended License <span class="green">*</span></label>
+                                    <div class="form_input-holder">
+                                        <input id="name" type="text" class="form_input" placeholder="$00.00">
+                                        <div class="btn_input">
+                                            <button type="submit" class="form_submit-btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </form>
-                </div>
-                
+
+                </div>    
             </div>
         </main>
 
