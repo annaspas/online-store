@@ -1,141 +1,142 @@
 .container {
-    background-color: #f4f6f5;
-    padding: 50px 25px;
+  background-color: #f4f6f5;
+  padding: 50px 25px;
 
-    .products_form {
-        background-color: $white;
-        padding: 20px 35px;
-    }
-    .form {
+  .products_form {
+    background-color: $white;
+    padding: 20px 35px;
+  }
+
+  .form {
+    &_row {
+      display: flex;
+
+      @media screen and (max-width: 600px) {
         &_row {
-            display: flex;
-
-            @media screen and (max-width: 600px) {
-                &_row {
-                    width: 100%;
-                    margin-top: 0;
-                    display: block;
-                }
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 20px;
-            }
-
-            .green {
-                color: $green;
-            }
+          width: 100%;
+          margin-top: 0;
+          display: block;
         }
+      }
 
-        &_label {
-            line-height: 40px;
-            min-width: 175px;
-            text-transform: capitalize;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
 
-            &:focus {
-                color: #d7d7d7;
-            }
-        }
-
-        &_input {
-            transition: border-color 0.3s;
-            position: relative;
-            z-index: 2;
-            background-color: transparent;
-            color: #444;
-            border: 1px solid #dedede;
-            outline: none;
-            box-shadow: none;
-            font-size: 15px;
-            line-height: 20px;
-            padding: 10px 15px;
-            width: 100%;
-
-            &:focus {
-                border-color: 1px solid #405d8b;
-            }
-
-            &::placeholder {
-                color: #707070;
-            }
-
-            &-holder {
-                position: relative;
-                background-color: #f9f9f9;
-                width: calc(100%-175px);
-
-                .btn_input {
-                    background: $white;
-
-                    .form_submit-btn {
-                        background-color: $green;
-                        color: $white;
-                        font-size: 16px;
-                        margin: 40px 0;
-                        width: 120px;
-                        height: 40px;
-                    }
-                }
-
-                @media screen and (max-width: 600px) {
-                    &-holder {
-                        width: 100%;
-                        margin-top: 0;
-                        display: block;
-                    }
-                }
-            }
-
-            &-file {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                top: 0;
-                opacity: 0;
-                width: 100%;
-            }
-        }
-
-        &_file {
-            text-transform: capitalize;
-            color: #707070;
-            line-height: 25px;
-            font-style: 12px;
-
-            &-fake {
-                border: 1px solid #dedede;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                padding: 0 10px;
-            }
-
-            &-btn {
-                width: 90px;
-                height: 25px;
-                margin-right: 15px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid #dedede;
-                background-color: $white;
-                color: #444;
-                font-size: 12px;
-                text-transform: capitalize;
-            }
-        }
-
-        &_block-line {
-            display: inline-block;
-            width: 100%;
-            height: 1px;
-            padding: 1px;
-            margin-bottom: 25px;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #d7d7d7;
-        }
+      .green {
+        color: $green;
+      }
     }
+
+    &_label {
+      line-height: 40px;
+      min-width: 175px;
+      text-transform: capitalize;
+
+      &:focus {
+        color: #d7d7d7;
+      }
+    }
+
+    &_input {
+      transition: border-color 0.3s;
+      position: relative;
+      z-index: 2;
+      background-color: transparent;
+      color: #444;
+      border: 1px solid #dedede;
+      outline: none;
+      box-shadow: none;
+      font-size: 15px;
+      line-height: 20px;
+      padding: 10px 15px;
+      width: 100%;
+
+      &:focus {
+        border-color: 1px solid #405d8b;
+      }
+
+      &::placeholder {
+        color: #707070;
+      }
+
+      &-holder {
+        position: relative;
+        background-color: #f9f9f9;
+        width: calc(100% - 175px);
+
+        .btn_input {
+          background: $white;
+
+          .form_submit-btn {
+            background-color: $green;
+            color: $white;
+            font-size: 16px;
+            margin: 40px 0;
+            width: 120px;
+            height: 40px;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          &-holder {
+            width: 100%;
+            margin-top: 0;
+            display: block;
+          }
+        }
+      }
+
+      &-file {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+      }
+    }
+
+    &_file {
+      text-transform: capitalize;
+      color: #707070;
+      line-height: 25px;
+      font-style: 12px;
+
+      &-fake {
+        border: 1px solid #dedede;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+      }
+
+      &-btn {
+        width: 90px;
+        height: 25px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dedede;
+        background-color: $white;
+        color: #444;
+        font-size: 12px;
+        text-transform: capitalize;
+      }
+    }
+
+    &_block-line {
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      padding: 1px;
+      margin-bottom: 25px;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #d7d7d7;
+    }
+  }
 }
