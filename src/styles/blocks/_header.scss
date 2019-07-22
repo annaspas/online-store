@@ -7,7 +7,7 @@
     text-align: le;
     justify-content: center;
     height: 100px;
-    padding: 15px 0 ;
+    padding: 15px 0;
   }
 
   .header_dropdown {
@@ -30,8 +30,8 @@
       ul {
         padding: 15px;
       }
-      
-      
+
+
     }
 
     .header_dropdown-btn {
@@ -48,7 +48,7 @@
       display: flex;
       margin: -5px -15px;
       padding: 0 5px;
-  }
+    }
 
   }
 
@@ -69,7 +69,7 @@
       font-family: $base-f-family;
       height: 35px;
       text-align: center;
-  
+
       a {
         color: #a3a6a8;
         text-align: center;
@@ -78,24 +78,24 @@
         font-size: 14px;
         font-family: $base-f-family;
       }
-    
-       a:hover {
+
+      a:hover {
         background-color: #a3a6a8;
         color: black;
       }
-    
-       .icon {
+
+      .icon {
         display: none;
       }
     }
   }
 
-   @media(max-width:$desktop-df) {
-     position: absolute;
-     text-outline: 100%;
-     left: 0;
-     right: 0;
-   }
+  @media(max-width: $desktop-df) {
+    position: absolute;
+    text-outline: 100%;
+    left: 0;
+    right: 0;
+  }
 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {

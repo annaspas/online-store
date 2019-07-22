@@ -29,7 +29,7 @@
       pointer-events: none;
 
       @media (max-width: $tablet-df) {
-        pointer-events: auto;        
+        pointer-events: auto;
       }
 
       .block-line {
@@ -70,7 +70,7 @@
 
       @media (max-width: $tablet-df) {
         display: none;
-        }
+      }
     }
 
     .product_card-counter {
@@ -91,7 +91,7 @@
 
     @media (max-width: $tablet-df) {
       display: none;
-      }
+    }
 
     .sidebar_title {
       font-size: 20px;
@@ -106,7 +106,7 @@
       pointer-events: none;
 
       @media (max-width: $tablet-df) {
-        pointer-events: auto;        
+        pointer-events: auto;
       }
 
       .block-line {
@@ -153,15 +153,15 @@
     margin: 15 auto;
     padding: 15px;
     border: none;
-      outline: none;
-      background: transparent;
-      pointer-events: none;
+    outline: none;
+    background: transparent;
+    pointer-events: none;
 
-      .sidebar_main {
-        @media (max-width: $tablet-df) {
-          pointer-events: auto;        
-        }
+    .sidebar_main {
+      @media (max-width: $tablet-df) {
+        pointer-events: auto;
       }
+    }
 
 
     .block-line {
@@ -190,10 +190,10 @@
 
 
     .sellers_main {
-        @media (max-width: $tablet-df) {
-          pointer-events: auto;        
-        }
+      @media (max-width: $tablet-df) {
+        pointer-events: auto;
       }
+    }
 
     .block-line {
       width: 208px;
@@ -203,7 +203,7 @@
       margin: 10px auto;
     }
   }
-  
+
 }
 
 

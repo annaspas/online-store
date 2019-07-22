@@ -151,7 +151,7 @@ input {
       margin-right: 0;
 
       @media (max-width: $tablet-df) {
-        display: none; 
+        display: none;
       }
 
       .btn_layout {
@@ -205,7 +205,7 @@ input {
         &-img {
           max-width: 220px;
         }
-  
+
         &-inner {
           flex-grow: 1;
 
@@ -213,15 +213,15 @@ input {
             display: block;
           }
         }
-  
+
         &-main {
           padding: 15px 15px 14px;
         }
-  
+
         &-title {
           margin-bottom: 4px;
         }
-  
+
         &-footer {
           padding: 10px 15px;
         }
@@ -230,7 +230,7 @@ input {
   }
 
   &_col {
-    width: calc(100%/3);
+    width: calc(100% / 3);
     padding: 15px;
     max-width: 350px;
     min-width: 290px;
