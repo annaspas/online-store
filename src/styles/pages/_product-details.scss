@@ -29,6 +29,7 @@
         }
 
         p {
+            width: 80%;
             font-size: 13px;
             font-family: $base-f-family;
             color: #707070;
@@ -351,12 +352,20 @@
         height: 65px;
         width: 242px;
         margin: 25px auto;
-        padding: 25px;
+        padding: 20px;
         text-align: center;
         justify-content: center;
 
-        .sidebar_main {
-            padding: 15px;
+        i {
+            color: #84949a;
+        }
+
+        .product_card-counter {
+            color: #263238;
+
+            span {
+                color: #5f6466;
+            }
         }
     }
 }
