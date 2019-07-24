@@ -10,9 +10,26 @@ input {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  min-height: 100vh;
 
   &_fix {
     display: flex;
+  }
+}
+
+.mobile_wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+  display: none;
+  z-index: 5;
+  top: 84px;
+
+  @media(min-width: $desktop-mf) {
+    display: none;
   }
 }
 
@@ -201,6 +218,7 @@ input {
       .product_card {
         max-width: 100%;
         flex-direction: row;
+
 
         &-img {
           max-width: 220px;

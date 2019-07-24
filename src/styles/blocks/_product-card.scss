@@ -4,6 +4,26 @@
     position: relative;
     background-color: $white;
 
+    &:hover {
+
+      .product_card-img {
+        animation-name: slide;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        display: block;
+      }
+    }
+
+    @keyframes slide { 
+      0% {
+        transform: translateX(0);
+      }
+    
+      100% {
+        transform: translateX(100px);
+      }
+    }
+
     &-label {
       position: absolute;
       left: 0;
@@ -99,3 +119,4 @@
     }
   }
 }
+

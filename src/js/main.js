@@ -1,11 +1,13 @@
 $(document).ready(function () {
 
-    $('.js_login-modal').magnificPopup({
-        type: 'inline',
-        items: {
-            src: '#login-modal'
-        }
-    });
+    if ($('.js_range').length > 0) {
+        $('.js_login-modal').magnificPopup({
+            type: 'inline',
+            items: {
+                src: '#login-modal'
+            }
+        });
+    }
 
     $('.form_input-file').on('change', function () {
         var fileVal = $(this).val();
@@ -16,6 +18,8 @@ $(document).ready(function () {
         $('.header_btns').slideToggle(400)
     })
 });
+
+
 
 $(document).ready(function () {
     $('.js_tabs-link').on('click', function () {
@@ -102,6 +106,14 @@ if ($(window).width() < 768) {
         $(this).parent().siblings().find('.sidebar_main').slideUp(400);
     });
 }
+
+$(window).on('resize', function() {
+if ($(window).width() >= 768) {
+    $('.header_btns').show();
+    } else if ($(window).width() < 768) {
+        $('.header_btns').hide();
+    }
+});
 
 
 
